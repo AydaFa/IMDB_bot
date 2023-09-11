@@ -8,7 +8,7 @@
 
 ## General info
 It's a Telegram bot for searching Movies in the IMDB API!<br />
-You can search for a phrase and then it will return the movies containg that phrase.<br />
+You can search for a phrase and then it will return the movies containing that phrase.<br />
 Finally, it will give you the information of a chosen movie.
 
 ## Requirements
