@@ -18,7 +18,7 @@ def movie_search(update, context):
     logging.debug(f"Received message: '{update.message.text}'")
 
 
-    response = requests.get(f'http://www.omdbapi.com/?apikey=37cc61e1&s={search_phrase}')
+    response = requests.get(f'http://www.omdbapi.com/?apikey=######&s={search_phrase}')
 
     if response.status_code == 200:
         movies = response.json().get('Search', [])
@@ -56,7 +56,7 @@ def select_movie(update, context):
     chosen_movie = context.user_data['chosen_movie']
     imdb_id = chosen_movie['imdbID']
 
-    response = requests.get(f'http://www.omdbapi.com/?apikey=37cc61e1&i={imdb_id}')
+    response = requests.get(f'http://www.omdbapi.com/?apikey=#######&i={imdb_id}')
     if response.status_code == 200:
         movie_details = response.json()
 
